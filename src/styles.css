@@ -93,13 +93,13 @@ nav button {
     font-family: "Funnel Sans", 'Times New Roman', Times, serif;
 }
 
-#content .content-title {
+#content .content-title{
     font-size: 2rem;
     font-weight: 700;
     margin-top: 50px;
 }
 
-#content .content-body {
+.content-body {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 50px 50px;
@@ -145,6 +145,29 @@ nav button {
 
 .element-title {
     font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.contact-body {
+    text-align: center;
+}
+
+.contact-body .content-body {
+    margin: 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+.socials img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
 }
 
 button.menu, button.home, button.contact{
