@@ -2,7 +2,7 @@
 import "./styles.css";
 import { handleContent, handleButtons } from "./modules/changeHandler.js";
 import { changeToMenu } from "./modules/menu.js";
-import { changeToAbout } from "./modules/about.js";
+import { changeToContact } from "./modules/contact.js";
 import { changeToHome } from "./modules/home.js";
 
 const navButtons = document.querySelectorAll("nav button")
@@ -13,6 +13,10 @@ const aboutButton = navButtons[2];
 
 const contentDiv = document.getElementById("content");
 
+handleContent(contentDiv);
+handleButtons(navButtons);
+changeToHome(contentDiv, homeButton);
+
 menuButton.addEventListener("click", (event) => {
     handleContent(contentDiv);
     handleButtons(navButtons);
@@ -22,7 +26,7 @@ menuButton.addEventListener("click", (event) => {
 aboutButton.addEventListener("click", (event) => {
     handleContent(contentDiv);
     handleButtons(navButtons);
-    changeToAbout(contentDiv, event.currentTarget);
+    changeToContact(contentDiv, event.currentTarget);
 })
 
 homeButton.addEventListener("click", (event) => {

@@ -1,6 +1,6 @@
 // changeHandler.js
 function handleContent(element) {
-    element.className = "";
+    element.innerHTML = "";
 }
 
 function handleButtons(buttons) {

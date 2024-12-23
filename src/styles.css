@@ -3,6 +3,8 @@
 html, body {
     margin: 0;
     height: 100%;
+
+    background-color: #c084fc;
 }
 
 body {
@@ -12,7 +14,6 @@ body {
 
 header {
     grid-row: 1 / 2;
-    background-color: #fda4af;
 
     display: flex;
     justify-content: center;
@@ -22,15 +23,25 @@ header {
     padding: 20px 20px 0 20px;
 }
 
+#name {
+    color: white;
+    font-family: "Funnel Sans", 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    display: flex;
+    gap: 20px;
+}
+
 #title {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Borel", 'Times New Roman', Times, serif;
-    height: 140px;
+    height: 120px;
 }
 
 header img {
-    width: 100px;
+    width: 80px;
     height: auto;
     align-self: flex-end;
 }
@@ -43,14 +54,14 @@ nav {
 nav button {
     outline: none;
     border: none;
-    background-color: #fda4af;
+    background-color: #c084fc;
 
     font-family: "Borel", 'Times New Roman', Times, serif;
     color: white;
     font-size: 1.2rem;
     font-weight: 600;
 
-    width: 80px;
+    width: 100px;
     height: 40px;
     border-radius: 15px 15px 0 0;
 
@@ -61,19 +72,57 @@ nav button {
     text-align: center;
 }
 
-#content {
+.container {
     grid-row: 2 / 5;
+    background-color: #c084fc;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
     height: 100%;
+    width: 60%;
+
+    background-color: honeydew;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Funnel Sans", 'Times New Roman', Times, serif;
 }
 
-.menu {
-    background-color: red;
+#content .content-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 50px;
 }
 
-.home {
-    background-color: rebeccapurple;
+#content .content-body {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 50px 50px;
+    text-align: center;
 }
 
-.about {
-    background-color: lavender;
+#content img {
+    width: 100px;
+    height: auto;
+}
+
+.content-img {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button.menu, button.home, button.contact{
+    background-color: honeydew;
+    color: black;
+
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);   
+    -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
 }
