@@ -106,7 +106,7 @@ nav button {
     text-align: center;
 }
 
-#content img {
+.content-img img {
     width: 100px;
     height: auto;
 }
@@ -116,6 +116,35 @@ nav button {
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.menu-body {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.menu-element {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-element img {
+    border: 3px solid #c084fc;
+    border-radius: 15px;
+
+    width: 150px;
+    height: auto;
+}
+
+.element-description {
+    width: 20ch;
+}
+
+.element-title {
+    font-weight: 800;
 }
 
 button.menu, button.home, button.contact{
